@@ -46,6 +46,26 @@ section {
   border-radius: 8px;
   transition: 0.3s;
 }
+   .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: #333;
+    color: white;
+    padding: 20px;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    object-fit: contain;
+    margin-right: 20px;
+}
+
+.header-text h1 {
+    margin: 0;
+}
 
 /* Hover effect */
 .project:hover {
@@ -72,9 +92,13 @@ section {
 
 <body>
 
-<header>
+<header class="header-container">
+  <img src ="photo.jpg.jpeg" alt="My Photo"
+  class="profile-pic">
+  <div class="header -text">
   <h1>Akash</h1>
   <p>Aspiring Web Developer</p>
+  </div>
 </header>
 
 <nav>
